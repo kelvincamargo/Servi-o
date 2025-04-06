@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Criação de Sites Profissionais</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #121212;
+      color: #e0e0e0;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(to right, #1f1f1f, #292929);
+      color: #00ffb3;
+      padding: 3rem 1rem;
+      text-align: center;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    }
+
+    header h1 {
+      font-size: 2.8rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .container {
+      padding: 2rem 1rem;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .intro {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+
+    .intro h2 {
+      font-size: 2rem;
+      color: #00ffb3;
+      margin-bottom: 1rem;
+    }
+
+    .intro p {
+      font-size: 1.2rem;
+      color: #ccc;
+    }
+
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+    }
+
+    .card {
+      background: #1e1e1e;
+      padding: 1.5rem;
+      border-radius: 15px;
+      border: 1px solid #333;
+      box-shadow: 0 0 15px rgba(0, 255, 179, 0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 25px rgba(0, 255, 179, 0.2);
+    }
+
+    .card h3 {
+      color: #00ffb3;
+      margin-bottom: 1rem;
+    }
+
+    .card p {
+      color: #ccc;
+    }
+
+    .whatsapp-button {
+      display: flex;
+      justify-content: center;
+      margin-top: 3rem;
+    }
+
+    .whatsapp-button a {
+      background: #25d366;
+      color: white;
+      padding: 1rem 2rem;
+      border-radius: 50px;
+      text-decoration: none;
+      font-size: 1.2rem;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+      transition: background 0.3s ease;
+    }
+
+    .whatsapp-button a:hover {
+      background: #1ebe5d;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      background: #1a1a1a;
+      color: #777;
+      margin-top: 4rem;
+    }
+
+    /* Animações */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .card, .intro, .whatsapp-button {
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    /* Responsivo extra */
+    @media (max-width: 500px) {
+      header h1 {
+        font-size: 2rem;
+      }
+
+      .intro h2 {
+        font-size: 1.5rem;
+      }
+
+      .whatsapp-button a {
+        font-size: 1rem;
+        padding: 0.8rem 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Criação de Sites Profissionais</h1>
+    <p>Seu negócio online com qualidade e estilo</p>
+  </header>
+
+  <div class="container">
+    <section class="intro">
+      <h2>Vamos dar vida à sua ideia!</h2>
+      <p>Desenvolvo sites rápidos, modernos e que se adaptam a qualquer tela. Design exclusivo e funcional para atrair mais clientes.</p>
+    </section>
+
+    <section class="services">
+      <div class="card">
+        <h3>Sites Institucionais</h3>
+        <p>Ideal para apresentar sua empresa de forma profissional, com credibilidade e presença online.</p>
+      </div>
+      <div class="card">
+        <h3>Portfólios & Landing Pages</h3>
+        <p>Mostre seus trabalhos ou promova um produto com uma página visualmente impactante.</p>
+      </div>
+      <div class="card">
+        <h3>Totalmente Responsivo</h3>
+        <p>Seus clientes verão seu site perfeitamente em qualquer dispositivo: celular, tablet ou computador.</p>
+      </div>
+      <div class="card">
+        <h3>Performance e SEO</h3>
+        <p>Sites otimizados para carregar rápido e aparecer melhor nos buscadores como o Google.</p>
+      </div>
+    </section>
+
+    <div class="whatsapp-button">
+      <a href="https://wa.me/5511997008207" target="_blank">💬 Fale comigo no WhatsApp</a>
+    </div>
+  </div>
+
+  <footer>
+    © 2025 - Desenvolvido por Kelvin Camargo By KSUtech. Todos os direitos reservados.
+  </footer>
+</body>
+</html>
